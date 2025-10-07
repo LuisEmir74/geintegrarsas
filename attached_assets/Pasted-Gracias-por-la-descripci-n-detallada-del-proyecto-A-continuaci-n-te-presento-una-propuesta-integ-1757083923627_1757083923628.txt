@@ -1,0 +1,190 @@
+Gracias por la descripción detallada del proyecto. A continuación, te presento una **propuesta integral de arquitectura y diseño para el sitio web institucional de Grupo Empresarial INTEGRAR S.A.S.**, cumpliendo con todos los lineamientos técnicos, estéticos y estratégicos indicados.
+
+---
+
+## 🧩 **1. Estructura del Sitio Web (Mapa del Sitio)**
+
+### Navegación superior fija (sticky header):
+
+```txt
+| Inicio | Quiénes Somos | Servicios Estratégicos | INTEGRABOT | Equipo Estratégico | Herramientas y Metodologías | Portafolio Visual | Blog/Recursos | Contacto |
+```
+
+---
+
+## 🌐 **2. Tecnologías Base**
+
+* **HTML5** + **CSS3** + **JavaScript**
+* Framework frontend: ✅ **React.js** *(opcional pero recomendado para modularidad y rendimiento)*
+* Estilo con **CSS Modules**, **SCSS**, o **Tailwind CSS** (opcional)
+* Enfoque **Mobile-first** y diseño totalmente **Responsive**
+
+---
+
+## 🎨 **3. Lineamientos de Diseño**
+
+* **Colores corporativos**:
+
+  * Azul profundo `#002B5B` (principal)
+  * Blanco `#FFFFFF` (texto, fondo claro)
+  * Gris claro `#F2F2F2` (fondos secundarios)
+* **Tipografía**: `Montserrat`, sans-serif
+* **Estética visual**:
+
+  * Transiciones suaves (`transition: all 0.3s ease`)
+  * Animaciones sutiles en scroll (con librerías como AOS.js)
+  * Íconos modernos (recomendado: Heroicons o FontAwesome)
+* **Identidad visual**: Enfatizar innovación, ética, modularidad
+
+---
+
+## 📑 **4. Secciones Principales (Detalle y Propósito)**
+
+### 1. **Inicio**
+
+* Hero con eslogan: *“Soluciones modulares, automatizadas y visuales para transformar organizaciones”*
+* Botón CTA: “Conoce más” / “Solicita asesoría”
+* Animaciones sutiles (fade in)
+* Imagen/ilustración representando automatización o tecnología
+
+### 2. **Quiénes Somos**
+
+* Historia: Fundación en 2016 en Cali, Colombia
+* Misión, Visión y Valores
+* Enfoque en ética profesional e innovación
+
+### 3. **Servicios Estratégicos**
+
+* Asesoría en licitaciones
+* Automatización de procesos
+* Consultoría institucional
+* Integración de IA
+* Diseño modular de soluciones
+* ✔️ Usar íconos ilustrativos y tarjetas modulares
+
+### 4. **INTEGRABOT**
+
+* Mockup visual del bot (imagen animada o SVG interactivo)
+* Descripción funcional: ¿Qué hace INTEGRABOT?
+* Casos de uso / ventajas
+* Posible interacción (simulación de chat)
+
+### 5. **Equipo Estratégico**
+
+* Foto y perfil de cada miembro
+* Roles, credenciales, experiencia
+* Slider o tarjetas con hover effects
+* Énfasis en transparencia y talento humano
+
+### 6. **Herramientas y Metodologías**
+
+* Gráficos o íconos representando herramientas propias o adaptadas
+* Metodologías ágiles, enfoque modular
+* Ejemplos de implementación
+
+### 7. **Portafolio Visual**
+
+* Galería filtrable (categorías: licitaciones, IA, automatización…)
+* Imágenes optimizadas con lazy loading
+* Lightbox para detalles
+
+### 8. **Blog/Recursos**
+
+* Artículos, boletines, infografías
+* SEO básico: título, metadescripción, etiquetas
+* Categorías por tema
+* Opción de búsqueda interna
+
+### 9. **Contacto**
+
+* Formulario con validación (`HTML5 + JS`)
+
+  * Nombre, correo, asunto, mensaje
+* Información de contacto: dirección, WhatsApp, correo
+* Mapa embebido (Google Maps)
+* Iconos de redes sociales con links
+
+---
+
+## ✅ **5. Accesibilidad (WCAG Compliance)**
+
+* Etiquetas semánticas (`<header>`, `<main>`, `<section>`, etc.)
+* Alt text en todas las imágenes
+* Contrastes suficientes entre texto y fondo
+* Navegación por teclado (focus visible)
+* ARIA labels para elementos interactivos
+
+---
+
+## 🔐 **6. Seguridad y Protección de Datos**
+
+* Formulario con validación contra XSS e inyecciones
+* Uso de HTTPS (SSL obligatorio)
+* Política de privacidad (enlace en footer)
+* Aviso legal y términos de uso
+* Cumplimiento con normativas colombianas (Ley 1581 de 2012)
+
+---
+
+## ⚙️ **7. Optimización de Rendimiento**
+
+* Comprimir imágenes (WebP)
+* Lazy loading de imágenes y vídeos
+* Minificación de CSS y JS
+* Cacheo de navegador (`Cache-Control`)
+* Reducción de solicitudes HTTP (uso de sprites o SVGs)
+
+---
+
+## 🔎 **8. SEO Básico**
+
+* Estructura semántica (uso correcto de `<h1>` a `<h6>`)
+* Metadatos: `title`, `description`, `keywords`
+* URL limpias y amigables (`/servicios-estrategicos`)
+* Sitemap.xml y robots.txt
+* Uso de Open Graph para redes sociales
+
+---
+
+## 🚀 **9. Estrategia de Deploy**
+
+* Hosting en Colombia (Ej.: Mi.com.co, ColombiaHosting)
+* Dominio: `www.integrarsas.com.co`
+* CDN (Ej.: Cloudflare)
+* Certificado SSL (Let’s Encrypt o pago)
+* Pipeline de deploy automático (CI/CD opcional con Vercel o Netlify si se usa React)
+
+---
+
+## 🤖 **Extras Recomendados**
+
+* Integración con WhatsApp Business
+* Chat flotante con IA (demo funcional de INTEGRABOT)
+* Formulario de suscripción al boletín
+* Animaciones de sección con AOS.js
+* Google Analytics + Meta Pixel
+
+---
+
+## 📁 **Estructura de Archivos (HTML + CSS + JS plano o React)**
+
+```plaintext
+/public
+  ├── index.html
+  ├── images/
+  └── assets/
+
+/src
+  ├── components/
+  ├── pages/
+  ├── styles/
+  ├── App.js
+  └── main.js
+
+```
+
+---
+
+¿Deseas que te prepare un **prototipo inicial en código (HTML + CSS)** o una **estructura base en React.js** para empezar a desarrollar el sitio? También puedo generar un **wireframe visual** o un **mockup UI** si lo prefieres.
+
+---
